@@ -1,0 +1,39 @@
+Subject Name: deadlock
+Souce Code Language: Java
+Number of Versions: 1
+Number of Variants: 2
+   - orig
+Error expected:
+   orig: deadlock
+Non-determinisitc: yes
+
+***orig*** (variant)
+LOC: 24 (d1) 17 (d2) (noncomment Java source code)
+Classes: 4 (d1) 2 (d2)
+Methods: 3 (d1) 2 (d2)
+Fields: 5 (d1) 6 (d2)
+Statements: 12 (d1) 10 (d2)
+wait() call: 0
+notifyAll() call: 0
+Sync blocks: 4 (d1) 2 (d2)
+Thread start() calls: 2
+New expressions: 4
+
+The deadlock program is based on the bug patterns reported in [1] and is a
+research object in references [2] and [3]:
+
+References:
+
+[1] Y. Eytani, and S. Ur. "Compiling a Benchmark of Documented Multi-threaded Bugs"
+in Proceedings of the 18th International Symposium on Parallel and Distributed 
+Processing: 266. April 2004.
+
+[2] Y. Eytani, K. Havelund, S.D. Stoller, and S. Ur.  "Toward a Framework and 
+Benchmark for Testing Tools for Multi-Threaded Programs" in Concurrency and 
+Computation: Practice and Experience, 19(3): 267-279. 2006.
+
+[3] Dwyer, Matthew B. and Person, Suzette and Elbaum, Sebastian.
+Controlling factors in evaluating path-sensitive error detection techniques,
+SIGSOFT '06/FSE-14: Proceedings of the 14th ACM SIGSOFT international symposium
+on Foundations of software engineering, 2006, isbn 1-59593-468-5, pp. 92--104,
+Portland, Oregon, USA, ACM, New York, NY, USA.
